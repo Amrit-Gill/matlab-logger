@@ -1,21 +1,21 @@
 % If you want to use logger in more than single matlab fuction, declare it as a global variable
 % global logger
-logger = matlab-logger();
-scriptName = mfileName;
+logger = matlabLogger();
+scriptName = mfilename;
 
-yoxInfo = 'I'm a informative string';
+yoxInfo = 'I am an informative string';
 logger.Info(scriptName, yoxInfo);
 
 yoxInfoVar = 44.2;
 logger.Info(scriptName, sprintf('The value of informative Variable is %d',yoxInfoVar));
 
-yoxWarn = 'I'm a warning string';
+yoxWarn = 'I am a warning string';
 logger.Warn(scriptName, yoxWarn);
 
-yoxDebug = 'I'm a debug string';
+yoxDebug = 'I am a debug string';
 logger.Debug(scriptName, yoxDebug);
 
-yoxError = 'I'm a Error string';
+yoxError = 'I am an Error string';
 logger.Error(scriptName, yoxError);
 
 delete(logger);
