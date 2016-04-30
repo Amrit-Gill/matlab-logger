@@ -4,7 +4,7 @@ classdef matlabLogger < handle
 %     Description:  matlabLogger is a simple logger library.
 %     Author: Amritbir Singh Gill
 %     Levels: ERROR, WARN, DEBUG, INFO
-%     Use:  Create a logger object as logger = ncLogger();
+%     Use:  Create a logger object as logger = matlabLogger();
 %			Define the current script name as scriptName = mfilename;
 %			Logging: logger.Debug(scriptName, 'This is a Dubug message');
 %			Use global logger to use logger object in sub functions.
